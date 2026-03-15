@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>News | xPI Lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--white:#fff;--bg:#f9fafb;--border:#e5e7eb;--ink:#111827;--ink2:#374151;--muted:#6b7280;--accent:#374151;--accent-dk:#111827;--accent-lt:#f3f4f6;--radius:8px;--nav-h:64px;--max:1100px}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;background:var(--white);color:var(--ink);font-size:15px;line-height:1.65}
+    a{color:var(--ink2);text-decoration:none}a:hover{text-decoration:underline}
+    h1,h2,h3{font-weight:700;line-height:1.25;color:var(--ink)}
+    nav{position:sticky;top:0;z-index:999;background:var(--white);border-bottom:1px solid var(--border);height:var(--nav-h);display:flex;align-items:center;padding:0 max(1.5rem,calc((100% - var(--max))/2));gap:2rem}
+    .nav-brand{display:flex;align-items:center;gap:0;text-decoration:none;flex-shrink:0}
+    .nav-brand svg{width:34px;height:34px}
+    .nav-brand-text{font-size:0.9rem;font-weight:700;color:var(--ink);line-height:1.2}
+    .nav-brand-text small{display:block;font-weight:400;font-size:0.68rem;color:var(--muted)}
+    .nav-links{display:flex;gap:0.1rem;list-style:none;margin-left:auto}
+    .nav-links a{font-size:0.82rem;font-weight:500;color:var(--muted);padding:0.4rem 0.75rem;border-radius:6px;transition:color .15s,background .15s;text-decoration:none;white-space:nowrap}
+    .nav-links a:hover,.nav-links a.active{color:var(--ink);background:var(--bg)}
+    .page-header{padding:3rem max(1.5rem,calc((100% - var(--max))/2)) 2rem;border-bottom:1px solid var(--border);background:var(--bg)}
+    .page-header h1{font-size:2rem;margin-bottom:0.4rem}
+    .page-header p{font-size:0.97rem;color:var(--muted)}
+    .section{padding:3rem max(1.5rem,calc((100% - var(--max))/2))}
+    /* NEWS LIST */
+    .news-list{display:flex;flex-direction:column}
+    .news-item{display:grid;grid-template-columns:120px 1fr;gap:1.5rem;padding:1.1rem 0;border-bottom:1px solid var(--border);align-items:baseline}
+    .news-item:first-child{border-top:1px solid var(--border)}
+    .news-date{font-size:0.78rem;color:var(--muted);white-space:nowrap;padding-top:0.1rem}
+    .news-content{}
+    .news-tag{display:inline-block;font-size:0.62rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:0.1rem 0.45rem;border-radius:3px;margin-right:0.4rem;vertical-align:middle}
+    .tag-paper{background:#f3f4f6;color:#374151}
+    .tag-award{background:#fef3c7;color:#92400e}
+    .tag-news{background:#f0fdf4;color:#166534}
+    .tag-event{background:#fdf4ff;color:#7e22ce}
+    .news-title{display:inline;font-size:0.95rem;font-weight:600;line-height:1.5;color:var(--ink)}
+    .news-desc{font-size:0.85rem;color:var(--muted);line-height:1.6;margin-top:0.25rem}
+    footer{background:#111827;color:rgba(255,255,255,0.6);padding:2rem max(1.5rem,calc((100% - var(--max))/2));display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;font-size:0.78rem}
+    footer a{color:rgba(255,255,255,0.6)}footer a:hover{color:#fff;text-decoration:underline}
+    @media(max-width:640px){.nav-links a{font-size:0.72rem;padding:0.3rem 0.45rem}}
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-brand" href="index.html">
+    <div class="nav-brand-text">xPI Lab<small>York University</small></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="research.html">Research</a></li>
+    <li><a href="publications.html">Publications</a></li><li><a href="team.html">Team</a></li>
+    <li><a href="news.html" class="active">News</a></li><li><a href="join.html">Join Us</a></li>
+  </ul>
+</nav>
+<div class="page-header">
+  <h1>News &amp; Activities</h1>
+  <p>Latest updates from xPI Lab.</p>
+</div>
+<div class="section">
+<div class="news-list">
+
+    <div class="news-item">
+      <span class="news-date">January 2026</span>
+      <div class="news-content">
+        <span class="news-tag tag-news">New</span><span class="news-title">xPI Lab Launches at York University</span>
+        <div class="news-desc">Prof. Shweta Mahajan joins York University EECS as an Assistant Professor and Vector Institute Faculty Affiliate. The xPI Lab is officially open and recruiting!</div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">November 2025</span>
+      <div class="news-content">
+        <span class="news-tag tag-award">Award</span><span class="news-title">Top Reviewer at NeurIPS 2025</span>
+        <div class="news-desc">Prof. Mahajan recognized as a Top Reviewer at NeurIPS 2025 for the second consecutive year.</div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">November 2025</span>
+      <div class="news-content">
+        <span class="news-tag tag-paper">Workshop</span><span class="news-title">Paper at NeurIPS 2025 Workshop on Efficient Reasoning</span>
+        <div class="news-desc">Attention Guided Alignment in Efficient Vision-Language Models presented at the NeurIPS 2025 Workshop on Efficient Reasoning.</div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">July 2025</span>
+      <div class="news-content">
+        <span class="news-tag tag-paper">ICCV 2025</span><span class="news-title">DuoLoRA Accepted at ICCV 2025</span>
+        <div class="news-desc">DuoLoRA: Cycle-consistent and Rank-disentangled Content-Style Personalization accepted at ICCV 2025.</div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">February 2025</span>
+      <div class="news-content">
+        <span class="news-tag tag-paper">CVPR 2025</span><span class="news-title">Two Papers Accepted at CVPR 2025</span>
+        <div class="news-desc">HyperNet Fields and Distilling Multi-modal LLMs for Autonomous Driving both accepted at CVPR 2025.</div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">November 2024</span>
+      <div class="news-content">
+        <span class="news-tag tag-award">Award</span><span class="news-title">Top Reviewer at NeurIPS 2024</span>
+        <div class="news-desc">Recognized as a Top Reviewer at NeurIPS 2024.</div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">February 2024</span>
+      <div class="news-content">
+        <span class="news-tag tag-paper">CVPR 2024</span><span class="news-title">Three Papers at CVPR 2024</span>
+        <div class="news-desc">Prompt Inversion, ViVid-1-to-3, and Unsupervised Keypoints from Diffusion Models all accepted at CVPR 2024.</div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">September 2023</span>
+      <div class="news-content">
+        <span class="news-tag tag-paper">NeurIPS 2023</span><span class="news-title">Paper Accepted at NeurIPS 2023</span>
+        <div class="news-desc">Unsupervised Semantic Correspondence Using Stable Diffusion accepted at NeurIPS 2023.</div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">September 2023</span>
+      <div class="news-content">
+        <span class="news-tag tag-event">Talk</span><span class="news-title">Invited Talk at NTU Singapore</span>
+        <div class="news-desc">Talk on Multimodal Representation Learning with Deep Generative Models at NTU Singapore.</div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">June 2023</span>
+      <div class="news-content">
+        <span class="news-tag tag-event">Doctoral Consortium</span><span class="news-title">Invited to Doctoral Consortium at CVPR 2023</span>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">February 2023</span>
+      <div class="news-content">
+        <span class="news-tag tag-paper">CVPR 2023</span><span class="news-title">Make-A-Story Accepted at CVPR 2023</span>
+        <div class="news-desc">Make-A-Story: Visual Memory Conditioned Consistent Story Generation accepted at CVPR 2023.</div>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <span class="news-date">June 2022</span>
+      <div class="news-content">
+        <span class="news-tag tag-news">Milestone</span><span class="news-title">PhD Successfully Defended at TU Darmstadt</span>
+        <div class="news-desc">Dissertation defended summa cum laude at Technische Universität Darmstadt.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<footer><span>© 2026 xPI Lab · York University</span><span><a href="https://lassonde.yorku.ca/" target="_blank">Lassonde</a> · <a href="https://vectorinstitute.ai/" target="_blank">Vector Institute</a></span></footer>
+</body>
+</html>

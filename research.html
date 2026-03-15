@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Research | xPI Lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--white:#fff;--bg:#f9fafb;--border:#e5e7eb;--ink:#111827;--ink2:#374151;--muted:#6b7280;--accent:#374151;--accent-dk:#111827;--accent-lt:#f3f4f6;--badge:#374151;--radius:8px;--nav-h:64px;--max:1100px}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;background:var(--white);color:var(--ink);font-size:15px;line-height:1.65}
+    a{color:var(--ink2);text-decoration:none}a:hover{text-decoration:underline}
+    h1,h2,h3{font-weight:700;line-height:1.25;color:var(--ink)}
+    p{margin-bottom:0.8rem}p:last-child{margin-bottom:0}
+    ul{padding-left:1.4rem}li{margin-bottom:0.35rem}
+    nav{position:sticky;top:0;z-index:999;background:var(--white);border-bottom:1px solid var(--border);height:var(--nav-h);display:flex;align-items:center;padding:0 max(1.5rem,calc((100% - var(--max))/2));gap:2rem}
+    .nav-brand{display:flex;align-items:center;gap:0;text-decoration:none;flex-shrink:0}
+    .nav-brand svg{width:34px;height:34px}
+    .nav-brand-text{font-size:0.9rem;font-weight:700;color:var(--ink);line-height:1.2}
+    .nav-brand-text small{display:block;font-weight:400;font-size:0.68rem;color:var(--muted)}
+    .nav-links{display:flex;gap:0.1rem;list-style:none;margin-left:auto}
+    .nav-links a{font-size:0.82rem;font-weight:500;color:var(--muted);padding:0.4rem 0.75rem;border-radius:6px;transition:color .15s,background .15s;text-decoration:none;white-space:nowrap}
+    .nav-links a:hover,.nav-links a.active{color:var(--ink);background:var(--bg)}
+    .page-header{padding:3rem max(1.5rem,calc((100% - var(--max))/2)) 2rem;border-bottom:1px solid var(--border);background:var(--bg)}
+    .page-header h1{font-size:2rem;margin-bottom:0.4rem}
+    .page-header p{font-size:0.97rem;color:var(--muted);max-width:600px}
+    .section{padding:3rem max(1.5rem,calc((100% - var(--max))/2))}
+    .section-alt{background:var(--bg)}
+    .section-title{font-size:1.2rem;font-weight:700;margin-bottom:1.2rem;padding-bottom:0.4rem;border-bottom:2px solid var(--border)}
+    /* RESEARCH AREAS */
+    .area-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.2rem;margin-bottom:3rem}
+    .area-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:1.5rem;transition:box-shadow .2s,border-color .2s}
+    .area-card:hover{box-shadow:0 4px 16px rgba(37,99,235,0.08);border-color:var(--ink2)}
+    .area-icon{font-size:1.8rem;margin-bottom:0.7rem}
+    .area-card h3{font-size:1rem;margin-bottom:0.5rem}
+    .area-card p{font-size:0.85rem;color:var(--muted);line-height:1.65}
+    /* PRINCIPLES */
+    .principle{display:flex;gap:1rem;align-items:flex-start;padding:1.2rem 0;border-bottom:1px solid var(--border)}
+    .principle:first-child{border-top:1px solid var(--border)}
+    .principle-num{font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink);background:var(--bg);padding:0.25rem 0.55rem;border-radius:4px;white-space:nowrap;flex-shrink:0;margin-top:0.15rem}
+    .principle h3{font-size:0.95rem;margin-bottom:0.3rem}
+    .principle p{font-size:0.88rem;color:var(--muted)}
+    footer{background:#111827;color:rgba(255,255,255,0.6);padding:2rem max(1.5rem,calc((100% - var(--max))/2));display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;font-size:0.78rem}
+    footer a{color:rgba(255,255,255,0.6)}footer a:hover{color:#fff;text-decoration:underline}
+    @media(max-width:640px){.area-grid{grid-template-columns:1fr}.nav-links a{font-size:0.72rem;padding:0.3rem 0.45rem}}
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-brand" href="index.html">
+    <div class="nav-brand-text">xPI Lab<small>York University</small></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="research.html" class="active">Research</a></li>
+    <li><a href="publications.html">Publications</a></li><li><a href="team.html">Team</a></li>
+    <li><a href="news.html">News</a></li><li><a href="join.html">Join Us</a></li>
+  </ul>
+</nav>
+<div class="page-header">
+  <h1>Research</h1>
+  <p>We develop methods that enable machines to perceive, understand, and generate across vision, language, and beyond.</p>
+</div>
+<div class="section">
+  <div class="section-title">Research Areas</div>
+  <div class="area-grid">
+    <div class="area-card"><div class="area-icon">✨</div><h3>Diffusion Models</h3><p>Diffusion-based generative frameworks for image synthesis, prompt inversion, novel view synthesis, and content personalization using low-rank adaptation techniques.</p></div>
+    <div class="area-card"><div class="area-icon">🔗</div><h3>Vision–Language Models</h3><p>Cross-modal alignment between visual and textual representations for visual story generation, diverse captioning, text-guided image manipulation, and multimodal LLM distillation.</p></div>
+    <div class="area-card"><div class="area-icon">🧠</div><h3>Representation Learning</h3><p>Structured latent spaces using normalizing flows, VAEs, and Wasserstein autoencoders to disentangle content, style, and domain-specific factors across modalities.</p></div>
+    <div class="area-card"><div class="area-icon">👁️</div><h3>Semantic Correspondence</h3><p>Unsupervised discovery of semantic keypoints and correspondences by exploiting rich internal representations from pretrained diffusion models—no labeled data needed.</p></div>
+    <div class="area-card"><div class="area-icon">⚡</div><h3>Efficient Vision AI</h3><p>Weight-trajectory hypernetworks and attention-guided alignment methods for compact, efficient vision-language models with reduced computational footprint.</p></div>
+    <div class="area-card"><div class="area-icon">🚗</div><h3>Autonomous Systems</h3><p>Distilling knowledge from large multimodal language models into lightweight vision-based end-to-end planners for real-world autonomous driving.</p></div>
+  </div>
+  <div class="section-title">Our Principles</div>
+  <div>
+    <div class="principle"><span class="principle-num">01</span><div><h3>Theory before scale</h3><p>We ground every method in rigorous probabilistic or geometric reasoning before scaling to practice.</p></div></div>
+    <div class="principle"><span class="principle-num">02</span><div><h3>Multimodal by design</h3><p>Vision and language are complementary views of a shared perceptual reality, not separate silos.</p></div></div>
+    <div class="principle"><span class="principle-num">03</span><div><h3>Generalize, don't memorize</h3><p>Models that truly understand generalize; models that memorize fail silently in the wild.</p></div></div>
+  </div>
+</div>
+<footer><span>© 2026 xPI Lab · York University</span><span><a href="https://lassonde.yorku.ca/" target="_blank">Lassonde</a> · <a href="https://vectorinstitute.ai/" target="_blank">Vector Institute</a></span></footer>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Join Us | xPI Lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--white:#fff;--bg:#f9fafb;--border:#e5e7eb;--ink:#111827;--ink2:#374151;--muted:#6b7280;--accent:#374151;--accent-dk:#111827;--accent-lt:#f3f4f6;--radius:8px;--nav-h:64px;--max:1100px}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;background:var(--white);color:var(--ink);font-size:15px;line-height:1.65}
+    a{color:var(--ink2);text-decoration:none}a:hover{text-decoration:underline}
+    h1,h2,h3,h4{font-weight:700;line-height:1.25;color:var(--ink)}
+    p{margin-bottom:0.8rem}p:last-child{margin-bottom:0}
+    ul,ol{padding-left:1.4rem}li{margin-bottom:0.35rem}
+    nav{position:sticky;top:0;z-index:999;background:var(--white);border-bottom:1px solid var(--border);height:var(--nav-h);display:flex;align-items:center;padding:0 max(1.5rem,calc((100% - var(--max))/2));gap:2rem}
+    .nav-brand{display:flex;align-items:center;gap:0;text-decoration:none;flex-shrink:0}
+    .nav-brand svg{width:34px;height:34px}
+    .nav-brand-text{font-size:0.9rem;font-weight:700;color:var(--ink);line-height:1.2}
+    .nav-brand-text small{display:block;font-weight:400;font-size:0.68rem;color:var(--muted)}
+    .nav-links{display:flex;gap:0.1rem;list-style:none;margin-left:auto}
+    .nav-links a{font-size:0.82rem;font-weight:500;color:var(--muted);padding:0.4rem 0.75rem;border-radius:6px;transition:color .15s,background .15s;text-decoration:none;white-space:nowrap}
+    .nav-links a:hover,.nav-links a.active{color:var(--ink);background:var(--bg)}
+    .page-header{padding:3rem max(1.5rem,calc((100% - var(--max))/2)) 2rem;border-bottom:1px solid var(--border);background:var(--bg)}
+    .page-header h1{font-size:2rem;margin-bottom:0.4rem}
+    .page-header p{font-size:0.97rem;color:var(--muted);max-width:600px}
+    .section{padding:3rem max(1.5rem,calc((100% - var(--max))/2))}
+    /* ROLE CARDS */
+    .role-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1.3rem;margin-bottom:3rem}
+    .role-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:1.6rem;transition:box-shadow .2s,border-color .2s}
+    .role-card:hover{box-shadow:0 4px 16px rgba(37,99,235,0.08);border-color:var(--ink2)}
+    .role-icon{font-size:1.8rem;margin-bottom:0.7rem}
+    .role-card h3{font-size:1rem;margin-bottom:0.6rem}
+    .role-card ul{font-size:0.85rem;color:var(--muted);padding-left:1.2rem}
+    .role-card li{margin-bottom:0.3rem;line-height:1.55}
+    /* PROCESS */
+    .process-title{font-size:1.2rem;font-weight:700;margin-bottom:1.5rem;padding-bottom:0.4rem;border-bottom:2px solid var(--border)}
+    .process-block{margin-bottom:2.5rem}
+    .process-block h3{font-size:1rem;font-weight:600;margin-bottom:0.4rem;padding-bottom:0.3rem;border-bottom:1px solid var(--border)}
+    .process-sub{font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin:1rem 0 0.4rem}
+    .process-block p,.process-block li{font-size:0.9rem;color:var(--ink2);line-height:1.7}
+    .process-block ol{padding-left:1.4rem}
+    .posted{font-size:0.78rem;color:var(--muted);margin-top:0.8rem;font-style:italic}
+    /* APPLY CTA */
+    .apply-cta{background:linear-gradient(135deg,#1f2937,#374151);border-radius:8px;padding:2.5rem;text-align:center;margin-top:2rem}
+    .apply-cta h2{color:#fff;font-size:1.4rem;margin-bottom:0.6rem}
+    .apply-cta p{color:rgba(255,255,255,0.8);font-size:0.93rem;margin-bottom:1.3rem}
+    .apply-cta a{display:inline-block;background:#fff;color:var(--ink);font-size:0.85rem;font-weight:600;padding:0.65rem 1.8rem;border-radius:6px;transition:background .2s}
+    .apply-cta a:hover{background:#e5e7eb;text-decoration:none}
+    footer{background:#111827;color:rgba(255,255,255,0.6);padding:2rem max(1.5rem,calc((100% - var(--max))/2));display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;font-size:0.78rem}
+    footer a{color:rgba(255,255,255,0.6)}footer a:hover{color:#fff;text-decoration:underline}
+    @media(max-width:640px){.nav-links a{font-size:0.72rem;padding:0.3rem 0.45rem}}
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-brand" href="index.html">
+    <div class="nav-brand-text">xPI Lab<small>York University</small></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="research.html">Research</a></li>
+    <li><a href="publications.html">Publications</a></li><li><a href="team.html">Team</a></li>
+    <li><a href="news.html">News</a></li><li><a href="join.html" class="active">Join Us</a></li>
+  </ul>
+</nav>
+<div class="page-header">
+  <h1>Join Us</h1>
+  <p>We are always looking for motivated students and researchers passionate about computer vision, generative models, and multimodal AI. York University is in Toronto — Canada's AI hub and home of the Vector Institute.</p>
+</div>
+<div class="section">
+  <div class="role-grid">
+    <div class="role-card">
+      <div class="role-icon">🎓</div>
+      <h3>PhD Students</h3>
+      <ul>
+        <li>Strong mathematical background and deep learning skills</li>
+        <li>Proficiency in Python / PyTorch</li>
+        <li>Prior research experience or publications is a plus</li>
+        <li>Fully funded positions available</li>
+      </ul>
+    </div>
+    <div class="role-card">
+      <div class="role-icon">📚</div>
+      <h3>Master Students</h3>
+      <ul>
+        <li>Self-motivated with passion for research</li>
+        <li>Good programming and ML foundations</li>
+        <li>Commitment to thesis or project goals</li>
+        <li>MASc (thesis) and MEng (project) positions</li>
+      </ul>
+    </div>
+    <div class="role-card">
+      <div class="role-icon">🔬</div>
+      <h3>Undergraduate Researchers</h3>
+      <ul>
+        <li>Curiosity-driven and fast learner</li>
+        <li>York University students preferred</li>
+        <li>Minimum 10 hrs/week for one semester</li>
+        <li>Academic credit or hourly compensation</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="process-title">How to Apply</div>
+
+  <div class="process-block">
+    <h3>PhD Students</h3>
+    <div class="process-sub">Application Process</div>
+    <ol>
+      <li>Email <a href="mailto:shweta.nith@outlook.com">shweta.nith@outlook.com</a> with your CV and a short research statement</li>
+      <li>Introductory call to assess initial fit</li>
+      <li>Half-day interview: research presentation + 1-on-1 with lab members + research direction discussion</li>
+      <li>Offer</li>
+      <li>Apply to <a href="https://futurestudents.yorku.ca/graduate" target="_blank">York University Graduate Admissions</a> listing Prof. Mahajan as supervisor</li>
+    </ol>
+    <p class="posted">Posted: January 1, 2026 · Fall 2026 intake</p>
+  </div>
+
+  <div class="process-block">
+    <h3>Master Students (MASc / MEng)</h3>
+    <div class="process-sub">Application Process</div>
+    <ol>
+      <li>Email <a href="mailto:shweta.nith@outlook.com">shweta.nith@outlook.com</a> with your CV, transcript, and a brief note on what you'd like to work on</li>
+      <li>Introductory call</li>
+      <li>Interview: short research presentation + discussion of future directions</li>
+      <li>Offer and formal application to York University</li>
+    </ol>
+    <p class="posted">Posted: January 1, 2026 · Rolling admissions</p>
+  </div>
+
+  <div class="process-block">
+    <h3>Undergraduate Research Assistants</h3>
+    <div class="process-sub">Application Process</div>
+    <ol>
+      <li>Email <a href="mailto:shweta.nith@outlook.com">shweta.nith@outlook.com</a> with your CV, transcript, and a 1-paragraph description of your research interests</li>
+      <li>Short introductory meeting</li>
+    </ol>
+    <p class="posted">Posted: January 1, 2026 · Rolling</p>
+  </div>
+
+  <div class="apply-cta">
+    <h2>Ready to Apply?</h2>
+    <p>Send your CV, transcripts, and a brief statement of research interests. Include "[Application — Role]" in your email subject.</p>
+    <a href="mailto:shweta.nith@outlook.com?subject=[Application]">Send Email →</a>
+  </div>
+</div>
+<footer><span>© 2026 xPI Lab · York University</span><span><a href="https://lassonde.yorku.ca/" target="_blank">Lassonde</a> · <a href="https://vectorinstitute.ai/" target="_blank">Vector Institute</a></span></footer>
+</body>
+</html>
