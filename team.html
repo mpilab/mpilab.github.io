@@ -74,7 +74,13 @@
       <div class="role">Principal Investigator · Assistant Professor, EECS · Vector Faculty Affiliate</div>
       <p>Prof. Mahajan's research spans deep generative models for multimodal learning — diffusion models, normalizing flows, and VAEs — with applications to vision, language, and autonomous systems. Previously at Qualcomm AI Research and UBC. Ph.D. summa cum laude from TU Darmstadt.</p>
       <div class="pi-links">
-        <a href="mailto:shweta.nith@outlook.com">Email</a>
+        <<span id="email-link"></span>
+        <script>
+          const user = "shweta.nith";
+          const domain = "outlook.com";
+          const el = document.getElementById("email-link");
+          el.innerHTML = '<a href="mailto:' + user + '@' + domain + '">' + user + '@' + domain + '</a>';
+        </script>
         <a href="https://scholar.google.de/citations?user=DUKzkPMAAAAJ" target="_blank">Google Scholar</a>
         <a href="https://www.linkedin.com/in/shweta-mahajan-4808a017/" target="_blank">LinkedIn</a>
         <a href="https://s-mahajan.github.io/" target="_blank">Personal Page</a>
@@ -102,7 +108,7 @@
       <div class="desc"><a href="join.html">See openings →</a></div>
     </div>
   </div>
-
+  <!--
   <div class="group-title">Collaborators</div>
   <div class="member-grid">
     <div class="member-card">
@@ -145,6 +151,7 @@
     </div>
   </div>
 </div>
+-->
 <footer><span>© 2026 xPI Lab · York University</span><span><a href="https://lassonde.yorku.ca/" target="_blank">Lassonde</a> · <a href="https://vectorinstitute.ai/" target="_blank">Vector Institute</a></span></footer>
 </body>
 </html>
